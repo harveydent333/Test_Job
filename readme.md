@@ -21,6 +21,7 @@
 15) MAIL_USERNAME=testlaravel3334@gmail.com
 16) MAIL_PASSWORD=123456789qq+
 17) MAIL_ENCRYPTION=tls
+
 !! Сохраняем файл как  .env
 4. Создаем таблицы в БД. Выполнить миграцию, командой php artisan migrate 
 4. Далее добавляем в нашу БД пользователя с ролью администратор, командой php artisan db:seed --class=DatabaseSeeder
