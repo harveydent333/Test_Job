@@ -2,6 +2,7 @@
 Запуск проекта, предумастривает установленные: Apache 2, MySQL, PHP7.2+, Composer.
 2. В дерикторию скачиваем проект командой git clone https://github.com/harveydent333/testovoe_zadanie.git
 Подключаем laravel командой  composer require laravel/homestead --dev
+
 3.Открываем файл .env.example и устанавливаем параметры:
 1) APP_NAME=Laravel
 2) APP_ENV=local
