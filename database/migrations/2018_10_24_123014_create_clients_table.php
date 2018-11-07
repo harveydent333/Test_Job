@@ -19,7 +19,9 @@ class CreateClientsTable extends Migration
             $table->string('email')->unique();
             $table->timestamps();
         });
-
+        Schema::table('files', function($table) {
+      $table->foreign('id_client')->references('id_client')->on('clients');
+  });
     }
 
     /**

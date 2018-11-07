@@ -31,6 +31,9 @@ a:link{
 #a{
   color:white;
 }
+div:link{
+  color:white;
+}
 .b-container{
     width:200px;
     height:20px;

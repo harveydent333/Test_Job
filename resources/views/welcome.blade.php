@@ -122,12 +122,12 @@
   <tr>
       <tr>
           <td>E-Mail</td>
-          <td><input type="text" class="" name="email" value=""><br></td>
+          <td><input type="text" class="" name="email" value="{{old('email')}}"><br></td>
       </tr>
           <tr><td><br></td></tr>
       <tr>
             <td>Description</td>
-            <td><textarea name="description"></textarea><br></td>
+            <td><textarea name="description">{{old('description')}}</textarea><br></td>
       </tr>
             <tr><td><br></td></tr>
       <tr>

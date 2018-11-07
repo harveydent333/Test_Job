@@ -3,8 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Request;
-class createTaskRequest extends FormRequest
+
+class UploadFiles extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,12 +23,10 @@ class createTaskRequest extends FormRequest
      */
     public function rules()
     {
-
         return [
-            'email'=>'required|string|email|max:255',
-            'name' => 'required|string|max:255',
-         'password' => 'required|string|min:8',
-         'password_confirmation' => 'required|same:password',
+          //    'file'=>'between:100000,150000',
+                'file'=>'between:1,150000',
+                  'email'=>'required|string|email|max:255',
         ];
     }
 }

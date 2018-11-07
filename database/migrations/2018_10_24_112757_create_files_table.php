@@ -24,9 +24,6 @@ class CreateFilesTable extends Migration
             $table->integer('id_client')->unsigned()->nullable();
             $table->timestamps();
         });
-        Schema::table('files', function($table) {
-      $table->foreign('id_client')->references('id_client')->on('clients');
-  });
     }
 
     /**
